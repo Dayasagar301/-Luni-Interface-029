@@ -14,7 +14,8 @@ import { FaShoppingCart } from 'react-icons/fa';
 export default function Navbar() {
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={16} h={20}>
+      <Box bg={useColorModeValue("gray.100", "gray.900")} px={16} h={20} position="fixed" top={0} left={0} right={0} zIndex={10}>
+        
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box>
             <Image src="./public/stylemart.png" h={200} />
