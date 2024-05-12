@@ -28,7 +28,7 @@ const WishCard = (props) => {
                 <img src={`https://shema-ecommerce.herokuapp.com/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="wish__image"/>
             </div>
             <div className="wish__item__name">{props.item.name}</div>
-            <div className="wish__item__price">${props.item.price}</div>
+            <div className="wish__item__price">₹{props.item.price}</div>
             <div className="add__to__cart">
                 <Button variant='outlined' onClick={handelAddToCart} sx={[{'&:hover': { backgroundColor: '#FFE26E', borderColor: '#FFE26E', color: 'black'}, borderColor: 'black', backgroundColor: "black" , color: "#FFE26E"}]}>Add to cart</Button>
             </div>

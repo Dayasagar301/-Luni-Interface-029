@@ -19,7 +19,7 @@ const RelatedCard = (props) => {
                         <span>{props.item.description}</span>
                     </div>
                     <div className="related__product__price">
-                        <span>${props.item.price}</span>
+                        <span>₹{props.item.price}</span>
                     </div>
                 </div>
             </div>
