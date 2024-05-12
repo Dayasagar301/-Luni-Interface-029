@@ -64,7 +64,7 @@ const CartCard = (props) => {
                     </FormControl>
                 </Box>
             </div>
-            <div className="cart__item__price">${props.item.price}</div>
+            <div className="cart__item__price">₹{props.item.price}</div>
             <div className="remove__item__icon">
                 <IconButton>
                     <HighlightOffIcon onClick={handelRemoveItem}/>

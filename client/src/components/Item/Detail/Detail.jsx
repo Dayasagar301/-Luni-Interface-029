@@ -53,7 +53,7 @@ const Detail = (props) => {
                         <div className="product-color-label">COLOR</div>
                         <div className="product-color" style={{backgroundColor: `${props.item.color}`}}></div>
                         </div>
-                    <div className="product__price__detail">${props.item.price}</div>
+                    <div className="product__price__detail">₹{props.item.price}</div>
                 </div>
                 <form onSubmit={handelAddToCart} className="product__form">
                 <div className="product__quantity__and__size">

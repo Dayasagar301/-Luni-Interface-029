@@ -39,7 +39,7 @@ const ItemCard = (props) => {
                         <span>{props.item.description}</span>
                     </div>
                     <div className="product__price">
-                        <span>${props.item.price}</span>
+                        <span>₹{props.item.price}</span>
                     </div>
                     <div className="product__card__action">
                         <IconButton onClick={handleAddToWishList} sx={ {borderRadius: '20px', width: '40px', height: '40px', /* borderWidth: '3px', borderStyle: 'solid', borderColor: '#FFE26E' */ }  }>
