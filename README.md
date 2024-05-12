@@ -1,70 +1,161 @@
-# Learnify App
+# StyleMate
 
 ## Introduction
-Learnify is a web application that aims to provide an educational platform similar to Udemy.com, allowing users to access and create online courses on various subjects. 
-
+Introducing StyleMate: an online fashion marketplace delivering personalized shopping experiences. Inspired by Myntra and Zalando, it offers curated selections of clothing, accessories, and footwear. Our goal is to enhance the shopping journey by merging convenience, variety, and personalization. Expect robust product listings, tailored recommendations, and social features fostering community engagement. Welcome to StyleMate, where every click brings you closer to your fashion desires.
 ## Project Type
-Frontend
+Frontend | Backend | Fullstack
 
 ## Deplolyed App
-Frontend: https://hack-sculptress-6789-1.onrender.com
+Frontend: https://luni-interface-029.vercel.app/
 
-Backend: https://hack-sculptress-6789.onrender.com
+Backend: https://luni-interface-029-1.onrender.com
 
 ## Directory Structure
 ```
-hack-sculptress-6789
-├── .gitignore
+-Luni-Interface-029
 ├── README.md
 ├── backend/
+│   ├── .env
 │   ├── .gitignore
-│   ├── db.json
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── recipeController.js
+│   │   └── user.js
 │   ├── index.js
-│   ├── package-lock.json
-│   └── package.json
-├── frontend/
-│   ├── .gitignore
-│   ├── images/
-│   │   ├── Carousel1.jpg
-│   │   ├── LearnifyFooterLogo.png
-│   │   ├── LearnifyLogo.png
-│   │   ├── emptyCart.jpg
-│   │   └── lock.png
-│   ├── index.html
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── model/
+│   │   ├── product.js
+│   │   └── user.js
 │   ├── package-lock.json
 │   ├── package.json
-│   ├── pages/
-│   │   ├── cart.html
-│   │   ├── categories.html
-│   │   ├── checkout.html
-│   │   ├── footer.html
-│   │   ├── login.html
-│   │   ├── nav.html
-│   │   └── signup.html
-│   ├── scripts/
-│   │   ├── cart.js
-│   │   ├── categories.js
-│   │   ├── checkout.js
-│   │   ├── login.js
-│   │   ├── page.js
-│   │   └── signup.js
-│   └── styles/
-│   │   ├── cart.css
-│   │   ├── checkout.css
-│   │   ├── featuredTopic.css
-│   │   ├── footer.css
-│   │   ├── hero.css
-│   │   ├── login.css
-│   │   ├── nav.css
-│   │   ├── signup.css
-│   │   └── topCategories.css
-└── package.json
+│   └── routes/
+│   │   ├── User.js
+│   │   └── product.js
+└── client/
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public/
+│   │   ├── index.html
+│   │   └── stylemart .png
+│   └── src/
+│   │   ├── Context/
+│   │   │   ├── CartItemsContext.js
+│   │   │   ├── CartItemsProvider.js
+│   │   │   ├── FeaturedCategoryContext.js
+│   │   │   ├── SearchContext.js
+│   │   │   ├── SearchProvider.js
+│   │   │   ├── WishItemsContext.js
+│   │   │   └── WishItemsProvider.js
+│   │   ├── app/
+│   │   │   ├── App.css
+│   │   │   └── App.jsx
+│   │   ├── asset/
+│   │   │   ├── Products/
+│   │   │   │   └── cloth/
+│   │   │   │   │   ├── kids/
+│   │   │   │   │   │   ├── bag/
+│   │   │   │   │   │   │   ├── rodini-1.jpg
+│   │   │   │   │   │   │   ├── rodini-2.jpg
+│   │   │   │   │   │   │   ├── rodini-3.jpg
+│   │   │   │   │   │   │   ├── rodini-4.jpg
+│   │   │   │   │   │   │   └── rodini-5.jpg
+│   │   │   │   │   │   ├── kids-1.jpg
+│   │   │   │   │   │   ├── kids-2.jpeg
+│   │   │   │   │   │   ├── kidsFashion.jpeg
+│   │   │   │   │   │   ├── outfit/
+│   │   │   │   │   │   │   ├── bobo-1.jpg
+│   │   │   │   │   │   │   ├── bobo-2.jpg
+│   │   │   │   │   │   │   ├── bobo-3.jpg
+│   │   │   │   │   │   │   ├── molo-1.jpg
+│   │   │   │   │   │   │   ├── molo-2.jpg
+│   │   │   │   │   │   │   ├── molo-3.jpg
+│   │   │   │   │   │   │   ├── stella-1.jpg
+│   │   │   │   │   │   │   ├── stella-2.jpg
+│   │   │   │   │   │   │   ├── stella-3.jpg
+│   │   │   │   │   │   │   ├── stellaMc-1.jpg
+│   │   │   │   │   │   │   ├── stellaMc-2.jpg
+│   │   │   │   │   │   │   └── stellaMc-3.jpg
+│   │   │   │   │   │   └── shoes/
+│   │   │   │   │   │   │   ├── adidas-1.jpg
+│   │   │   │   │   │   │   ├── adidas-3.jpg
+│   │   │   │   │   │   │   ├── adidas-4.jpg
+│   │   │   │   │   │   │   ├── adidas-5.jpg
+│   │   │   │   │   │   │   ├── stellaMc1-1.jpg
+│   │   │   │   │   │   │   ├── stellaMc1-2.jpg
+│   │   │   │   │   │   │   ├── stellaMc1-3.jpg
+│   │   │   │   │   │   │   ├── veja-1.jpg
+│   │   │   │   │   │   │   ├── veja-2.jpg
+│   │   │   │   │   │   │   ├── veja-3.jpg
+│   │   │   │   │   │   │   └── veja-3_2.jpg
+│   │   │   │   │   ├── men/
+│   │   │   │   │   │   ├── jeans/
+│   │   │   │   │   │   │   ├── dolce-1.jpg
+│   │   │   │   │   │   │   ├── dolce-2.jpg
+│   │   │   │   │   │   │   ├── versace 2.jpg
+│   │   │   │   │   │   │   └── versace-1.jpg
+│   │   │   │   │   │   ├── men-1.jpeg
+│   │   │   │   │   │   ├── menFashion.jpg
+│   │   │   │   │   │   ├── shoes/
+│   │   │   │   │   │   │   ├── clarks-1.jpg
+│   │   │   │   │   │   │   ├── clarks-2.jpg
+│   │   │   │   │   │   │   ├── clarks-3.jpg
+│   │   │   │   │   │   │   ├── clarks-4.jpg
+│   │   │   │   │   │   │   ├── nike/
+│   │   │   │   │   │   │   │   ├── airforce-1.jpg
+│   │   │   │   │   │   │   │   ├── airforce-2.webp
+│   │   │   │   │   │   │   │   ├── airforce-3.jpg
+│   │   │   │   │   │   │   │   └── airforce-4.jpg
+│   │   │   │   │   │   │   ├── versace-1.jpg
+│   │   │   │   │   │   │   ├── versace-2.jpg
+│   │   │   │   │   │   │   ├── versace-3.jpg
+│   │   │   │   │   │   │   └── versace-4.jpg
+│   │   │   │   │   │   ├── shorts/
+│   │   │   │   │   │   │   ├── 18377801_40805544_1000.jpg
+│   │   │   │   │   │   │   ├── 18377801_40807997_1000.jpg
+│   │   │   │   │   │   │   ├── les-1.jpg
+│   │   │   │   │   │   │   ├── les-2.jpg
+│   │   │   │   │   │   │   ├── les-3.jpg
+│   │   │   │   │   │   │   └── les-4.jpg
+│   │   │   │   │   │   ├── suits/
+│   │   │   │   │   │   │   ├── zegna-1.jpg
+│   │   │   │   │   │   │   ├── zegna-2.jpg
+│   │   │   │   │   │   │   └── zegna-3.jpg
+│   │   │   │   │   │   ├── tops/
+│   │   │   │   │   │   │   └── hoodie/
+│   │   │   │   │   │   │   │   ├── kenzo-tiger-1.jpg
+│   │   │   │   │   │   │   │   ├── kenzo-tiger-2.jpg
+│   │   │   │   │   │   │   │   ├── kenzo-tiger-head-2.jpg.webp
+│   │   │   │   │   │   │   │   └── kenzo-tiger-head-3.jpg
+│   │   │   │   │   │   ├── tshirt/
+│   │   │   │   │   │   │   ├── valentino-1.jpg
+│   │   │   │   │   │   │   ├── valentino-2.jpg
+│   │   │   │   │   │   │   └── valentino-3.jpg
+│   │   │   │   │   │   └── watches/
+│   │   │   │   │   │   │   ├── locman-1.jpg
+│   │   │   │   │   │   │   └── locman-2.jpg
+│   │   │   │   │   └── women/
+│   │   │   │   │   │   ├── outfits/
+│   │   │   │   │   │   ├── shoes/
+│   │   │   │   │   │   ├── women-1.jpeg
+│   │   │   │   │   │   ├── women.jpeg
+│   │   │   │   │   │   ├── womenFashion.jpg
+│   │   │   │   │   │   └── womwn.jpg
+│   │   │   ├── brand/
+│   │   │   ├── icons/
+│   │   │   └── img/
+│   │   ├── components/
+│   │   ├── index.js
+│   │   ├── routes/
+│   │   └── utils/
 ```
 
 ## Video Walkthrough of the project
 A detailed walkthrough of all the features of our project can be found here:
 
-https://youtu.be/qKIydrXIHiM
+https://youtu.be/D8LiEdwBfK8?si=8gyXq0zW8w1bF4oh
 
 ## Features
 
@@ -79,55 +170,62 @@ https://youtu.be/qKIydrXIHiM
 Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
 
 ```bash
-cd hack-sculptress-6789
-npm run install_things
-npm run frontend
+-Luni-Interface-029
+cd client
+npm run start
+cd backend
 npm run server
 ```
 
 ## Usage
 
 #### Landing Page
+![Landing Page](https://github.com/Dayasagar301/-Luni-Interface-029/assets/132691000/f8b0a866-60c0-4cd4-beca-b97bee828fb5)
 
-![landing page](https://github.com/ShubhKeshari/hack-sculptress-6789/assets/113028201/1b60d794-34f2-478f-a034-c95141050aa3)
+
 
 <hr>
 
 #### Login Page
+![login page](https://github.com/Dayasagar301/-Luni-Interface-029/assets/132691000/21918f8e-d664-4b6c-9670-89ad435df313)
 
-![login page](https://github.com/ShubhKeshari/hack-sculptress-6789/assets/113028201/46cecdf5-d1c0-4fe1-a267-9d6351845b82)
 
-<hr>
-
-#### Category page
-
-![Screenshot 2024-04-17 153331](https://github.com/ShubhKeshari/hack-sculptress-6789/assets/114546254/db674006-150b-458b-a59a-ba9049e17146)
 
 <hr>
 
-#### Cart Page
+#### shop page
+![Screenshot (84)](https://github.com/Dayasagar301/-Luni-Interface-029/assets/132691000/272b764d-6a11-4fe2-be0f-96464997ed15)
 
-![Screenshot 2024-04-17 153421](https://github.com/ShubhKeshari/hack-sculptress-6789/assets/114546254/4a26dfe0-878c-4edc-afc2-4f4f8ff36c1a)
+
 
 <hr>
 
-#### Checkout page
+#### Wishlist Page
+![Screenshot (86)](https://github.com/Dayasagar301/-Luni-Interface-029/assets/132691000/6c920fc8-3743-493d-b20f-6438af111565)
 
-![capture_20240226084216087](https://github.com/ShubhKeshari/hack-sculptress-6789/assets/113028201/4c245d86-1d87-4597-a6b3-91b0331799d4)
+
+
+<hr>
+
+#### Cart page
+![Screenshot (87)](https://github.com/Dayasagar301/-Luni-Interface-029/assets/132691000/2c406651-ac56-4044-89dd-d3283c534e8a)
+
+
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
 
 - HTML5
 - CSS
-- JavaScript 
+- Reactjs
 - Bootstrap
+- Nodejs
+- MongoDB
+- Chakra UI
 
 ### Team members :-
 
-1. Shubham
-2. Dayasagar Dalai
-3. Mayur Awari
-4. Ashish Jadhav
-5. Praveen Kumar
+
+1. Dayasagar Dalai
+2. Abhay Kawle
 
