@@ -11,7 +11,7 @@ const Home = () => {
     TabTitle("Home - StyleMate");
 
     useEffect(() => {
-        axios.get("http://localhost:2000/product")
+        axios.get("https://luni-interface-029-1.onrender.com/product")
             .then(res => setFeaturedItems(res.data))
             .catch(err => console.log(err))
 

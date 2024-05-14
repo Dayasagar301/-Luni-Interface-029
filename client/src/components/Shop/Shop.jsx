@@ -14,7 +14,7 @@ const Shop = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:2000/product")
+      .get("https://luni-interface-029-1.onrender.com/product")
       .then((res) => {
         setMenItems(res.data.filter((item) => item.category === "men"));
         setKidsItems(res.data.filter((item) => item.category === "kids"));
