@@ -8,7 +8,7 @@ Frontend | Backend | Fullstack
 ## Deplolyed App
 Frontend: https://luni-interface-029.vercel.app/
 
-Backend: https://luni-interface-029-1.onrender.com
+Backend: https://luni-interface-029-1.onrender.com/product
 
 ## Directory Structure
 ```
